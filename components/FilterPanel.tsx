@@ -4,8 +4,8 @@
 */
 
 import React, { useState } from 'react';
-import { MagicWandIcon, LoadingSpinnerIcon } from './icons';
-import { generateRandomPrompt } from '../services/geminiService';
+import { MagicWandIcon, LoadingSpinnerIcon } from './icons.tsx';
+import { generateRandomPrompt } from '../services/geminiService.ts';
 
 interface FilterPanelProps {
   onApply: (prompt: string, applyToAll: boolean) => void;

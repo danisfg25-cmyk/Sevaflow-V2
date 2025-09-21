@@ -6,15 +6,15 @@
 
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import ReactCrop, { type Crop, type PixelCrop } from 'react-image-crop';
-import { generateEditedImage, generateFilteredImage, generateAdjustedImage, generateBackgroundImage, applyBackgroundToImage, generateRandomPrompt } from './services/geminiService';
-import Header from './components/Header';
-import Spinner from './components/Spinner';
-import FilterPanel from './components/FilterPanel';
-import AdjustmentPanel from './components/AdjustmentPanel';
-import CropPanel from './components/CropPanel';
-import { UndoIcon, RedoIcon, EyeIcon, MagicWandIcon, LoadingSpinnerIcon } from './components/icons';
-import StartScreen from './components/StartScreen';
-import ThumbnailStrip from './components/ThumbnailStrip';
+import { generateEditedImage, generateFilteredImage, generateAdjustedImage, generateBackgroundImage, applyBackgroundToImage, generateRandomPrompt } from './services/geminiService.ts';
+import Header from './components/Header.tsx';
+import Spinner from './components/Spinner.tsx';
+import FilterPanel from './components/FilterPanel.tsx';
+import AdjustmentPanel from './components/AdjustmentPanel.tsx';
+import CropPanel from './components/CropPanel.tsx';
+import { UndoIcon, RedoIcon, EyeIcon, MagicWandIcon, LoadingSpinnerIcon } from './components/icons.tsx';
+import StartScreen from './components/StartScreen.tsx';
+import ThumbnailStrip from './components/ThumbnailStrip.tsx';
 
 // Helper to convert a data URL string to a File object
 const dataURLtoFile = (dataurl: string, filename: string): File => {

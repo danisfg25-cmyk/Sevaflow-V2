@@ -4,8 +4,8 @@
 */
 
 import React, { useState } from 'react';
-import { UploadIcon, MagicWandIcon, LoadingSpinnerIcon } from './icons';
-import { generateRandomPrompt } from '../services/geminiService';
+import { UploadIcon, MagicWandIcon, LoadingSpinnerIcon } from './icons.tsx';
+import { generateRandomPrompt } from '../services/geminiService.ts';
 
 interface AdjustmentPanelProps {
   onApply: (prompt: string, applyToAll: boolean) => void;

@@ -4,7 +4,7 @@
 */
 
 import React, { useState } from 'react';
-import { UploadIcon, MagicWandIcon, PaletteIcon, SunIcon } from './icons';
+import { UploadIcon, MagicWandIcon, PaletteIcon, SunIcon } from './icons.tsx';
 
 interface StartScreenProps {
   onFileSelect: (files: FileList | null) => void;
